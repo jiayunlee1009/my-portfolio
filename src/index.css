@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f7fb;
+  color: #222;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: #111827;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.nav-links a:hover {
+  opacity: 0.7;
+}
+
+.hero {
+  padding: 120px 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+}
+
+.hero h1 {
+  margin-bottom: 16px;
+  font-size: 3rem;
+}
+
+.hero p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #475569;
+}
+
+section {
+  padding: 80px 40px;
+}
+
+.projects-section h2,
+#activities h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.section-description {
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+}
+
+.project-category {
+  display: inline-block;
+  margin: 0 0 10px 0;
+  font-size: 0.9rem;
+  color: #4f46e5;
+  background: #eef2ff;
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+
+.project-card h3 {
+  margin: 8px 0 12px;
+  font-size: 1.3rem;
+}
+
+.project-summary {
+  color: #475569;
+  line-height: 1.6;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.tech-tag {
+  background: #e2e8f0;
+  color: #334155;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.read-more-btn {
+  border: none;
+  background: #111827;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background: #1f2937;
+}
+
+.project-details {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  color: #334155;
+  line-height: 1.7;
+}
