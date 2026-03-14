@@ -5,6 +5,7 @@ function Navbar() {
 
       <div className="nav-links">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#activities">Activities</a>
         <a href="#contact">Contact</a>

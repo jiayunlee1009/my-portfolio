@@ -30,11 +30,76 @@ function ProjectCard({ project }) {
 
       {isOpen && (
         <div className="project-details">
-          <p>{project.details}</p>
+
+            <p>{project.details}</p>
+
+            <div className="project-highlights">
+            <h4>作品重點</h4>
+            <ul>
+                {project.highlights.map((highlight, index) => (
+                <li key={index}>{highlight}</li>
+                ))}
+            </ul>
+            </div>
+
+            {project.poster && (
+            <div className="project-media-block">
+                <h4>專案海報</h4>
+                <img src={project.poster} className="project-poster" />
+            </div>
+            )}
+
+            {project.gallery.length > 0 && (
+            <div className="project-media-block">
+                <h4>作品畫面</h4>
+                <div className="project-gallery">
+                {project.gallery.map((img, index) => (
+                    <img key={index} src={img} className="project-gallery-image" />
+                ))}
+                </div>
+            </div>
+            )}
+
+            {project.videoLink && (
+            <div className="project-media-block">
+                <h4>作品影片</h4>
+
+                <video className="project-video" controls>
+                <source src={project.videoLink} type="video/mp4" />
+                </video>
+
+            </div>
+            )}
+
+            <div className="project-links">
+
+            {project.demoLink && (
+                <a href={project.demoLink} target="_blank" rel="noreferrer">
+                Demo
+                </a>
+            )}
+
+            {project.githubLink && (
+                <a href={project.githubLink} target="_blank" rel="noreferrer">
+                GitHub
+                </a>
+            )}
+
+            {project.pdfLinks &&
+                project.pdfLinks.map((pdf, index) => (
+                    <a key={index} href={pdf.url} target="_blank" rel="noreferrer">
+                    {pdf.label}
+                    </a>
+                ))}
+
+
+            </div>
+
         </div>
-      )}
-    </div>
-  );
-}
+        )}
+
+            </div>
+        );
+        }
 
 export default ProjectCard;
