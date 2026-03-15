@@ -5,7 +5,7 @@ function Contact() {
       
 
       <div className="contact-card">
-        <p>Phone：0908080109</p>
+        <p>Phone：0908-080-109</p>
         <p>Email：lee.cammi109@gmail.com</p>
       </div>
     </section>
