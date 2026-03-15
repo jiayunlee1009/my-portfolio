@@ -1,3 +1,5 @@
+const activityImage = (path) => `${import.meta.env.BASE_URL}${path}`;
+
 function Activities() {
   return (
     <section id="activities" className="activities-section">
@@ -8,7 +10,12 @@ function Activities() {
 
       <div className="activities-list">
         <div className="activity-card">
-          <h3>114學年度 輔大燈音組 教學長</h3>
+          <img
+            src={activityImage("assets/activities/activities1.jpg")}
+            alt="燈光音響組教學長"
+            className="activity-image"
+          />
+          <h3>114學年度 輔仁大學 燈光音響組 教學長</h3>
           <p>
             利用課餘培養舞台燈光與音響技術，參與多場音樂演出舞台執行，
             並規劃社團年度系統化教學課程，累積教學與口語表達能力。
@@ -16,6 +23,11 @@ function Activities() {
         </div>
 
         <div className="activity-card">
+          <img
+            src={activityImage("assets/activities/activities2.jpg")}
+            alt="百年校慶燈光音響負責人"
+            className="activity-image"
+          />
           <h3>114學年度 輔仁大學百年校慶 燈光音響負責人</h3>
           <p>
             統籌校慶活動燈光與音響硬體規劃，累積團隊分工與領導能力
@@ -23,6 +35,11 @@ function Activities() {
         </div>
 
         <div className="activity-card">
+          <img
+            src={activityImage("assets/activities/activities3.jpg")}
+            alt="攝影社活動幹部"
+            className="activity-image"
+          />
           <h3>113學年度 輔大攝影社 活動長</h3>
           <p>
             負責社團活動的策劃，並與業界攝影師接洽，規劃攝影與活動流程。
