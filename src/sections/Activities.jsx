@@ -25,7 +25,7 @@ function Activities() {
         <div className="activity-card">
           <img
             src={activityImage("assets/activities/activities2.jpg")}
-            alt="百年校慶燈光音響負責人"
+            alt="燈光音響組教學長"
             className="activity-image"
           />
           <h3>114學年度 輔仁大學百年校慶 燈光音響負責人</h3>
