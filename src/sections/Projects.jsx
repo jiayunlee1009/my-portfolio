@@ -14,7 +14,7 @@ function Projects() {
     <section id="projects" className="projects-section">
       <h2>Projects</h2>
       <p className="section-description">
-        這裡整理了我的專題製作與學習經歷，點擊卡片可查看更多詳細內容。
+        展示專題製作與學習經歷的專案作品，點擊Read More可查看作品介紹及成果展示。
       </p>
 
       <div className="project-category-block">

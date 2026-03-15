@@ -2,10 +2,7 @@ function Skills() {
   return (
     <section id="skills" className="skills-section">
       <h2>Skills</h2>
-      <p className="section-description">
-        目前主要累積的技術與工具如下。
-      </p>
-
+      
       <div className="skills-group">
         <div className="skills-card">
           <h3>Frontend</h3>
@@ -13,14 +10,17 @@ function Skills() {
             <span>HTML</span>
             <span>CSS</span>
             <span>JavaScript</span>
-            <span>React</span>
             <span>TypeScript</span>
+            <span>React</span>
+            <span>Vue</span>
           </div>
         </div>
 
         <div className="skills-card">
           <h3>Backend / Database</h3>
           <div className="skills-tags">
+            <span>Java</span>
+            <span>C#</span>
             <span>Node.js</span>
             <span>NestJS</span>
             <span>MySQL</span>

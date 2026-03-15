@@ -64,18 +64,26 @@ function ProjectCard({ project }) {
             <div className="project-media-block">
                 <h4>作品影片</h4>
 
-                <video className="project-video" controls>
-                <source src={project.videoLink} type="video/mp4" />
-                </video>
-
-            </div>
+                {project.videoLink.includes("drive.google.com") ? (
+                 <div className="project-external-link">
+        <a href={project.videoLink} target="_blank" rel="noreferrer">
+          前往觀看影片
+        </a>
+      </div>
+    ) : (
+      <video className="project-video" controls>
+        <source src={project.videoLink} type="video/mp4" />
+        您的瀏覽器不支援影片播放
+      </video>
+    )}
+  </div>
             )}
 
             <div className="project-links">
 
             {project.demoLink && (
                 <a href={project.demoLink} target="_blank" rel="noreferrer">
-                Demo
+                點擊前往網頁
                 </a>
             )}
 

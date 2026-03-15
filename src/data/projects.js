@@ -6,13 +6,13 @@ const projects = [
     title: "團體健檢預約與管理系統",
     category: "專題製作",
     tech: ["React", "TypeScript", "NestJS", "MySQL"],
-    summary: "整合預約、名冊管理與健檢流程的系統開發專題。",
+    summary: "整合前台民眾預約系統、與醫院後台管理系統的開發專題。",
     details:
-      "此專題為團體健檢預約與管理系統，包含員工預約前台、業務中心與健檢中心等模組，規劃團體資料、名冊、預約流程與健檢場次管理。",
+      "此專題為團體健檢預約與管理系統，使用VS Code以Nest.js的架構建立本系統、MySQL作為資料庫儲存資料。",
     highlights: [
-      "整合員工預約、團體名冊與健檢流程管理",
-      "規劃前台、業務中心與健檢中心多角色操作流程",
-      "使用 React、TypeScript、NestJS 與 MySQL 建構系統架構",
+      "整合員工預約、團體名冊與健檢流程管理平台",
+      "規劃預約系統、業務中心與健檢中心多角色操作流程",
+      "系統設計考量為預約身分驗證與名額控管，並支援權限與角色分離的管理後台。",
     ],
     poster: asset("assets/projects/health-system/poster.png"),
     gallery: [],
@@ -25,7 +25,7 @@ const projects = [
     title: "線上點餐系統",
     category: "學習經歷",
     tech: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL"],
-    summary: "具備購物車、訂單送出與查詢功能的前後端整合網站。",
+    summary: "具備購物車、訂單送出與查詢功能的前後端整合點餐系統。",
     details:
       "使用 HTML、CSS、JavaScript 與 Node.js（Express）開發線上點餐網站，整合 MySQL 資料庫完成餐點選擇、購物車、訂單送出與訂單查詢功能。",
     highlights: [
@@ -56,7 +56,6 @@ const projects = [
     gallery: [
       asset("assets/projects/pet-feeder/pet-feeder-teamwork1.jpg"),
       asset("assets/projects/pet-feeder/pet-feeder-teamwork2.jpg"),
-      asset("assets/projects/pet-feeder/pet-feeder-teamwork3.jpg"),
     ],
     videoLink: asset("assets/projects/pet-feeder/pet-feeder-demo.mp4"),
     demoLink: "",
@@ -73,8 +72,7 @@ const projects = [
       "使用 Kotlin 於 Android Studio 開發 Android 手機 APP，透過轉盤互動方式協助使用者快速決定餐點選擇。",
     highlights: [
       "使用 Kotlin 開發 Android APP",
-      "設計餐點隨機推薦與互動式操作流程",
-      "之後可補 APP 截圖與操作影片",
+      "設計餐點隨機推薦與互動式美食轉盤",
     ],
     poster: "",
     gallery: [],
@@ -89,11 +87,10 @@ const projects = [
     tech: ["C#", "MVC"],
     summary: "以 MVC 架構實作電子病歷資料的新增、修改與刪除。",
     details:
-      "以 MVC 架構及 C# 語法練習撰寫電子病歷網頁，完成電子病歷資料的新增、修改、刪除等 CRUD 功能。",
+      "",
     highlights: [
-      "使用 MVC 架構進行系統開發練習",
-      "完成電子病歷資料 CRUD 功能",
-      "目前先以文字說明呈現",
+      "使用 MVC 架構及 C# 語法練習撰寫電子病歷網頁",
+      "完成電子病歷資料的新增、修改、刪除等 CRUD 功能",
     ],
     poster: "",
     gallery: [],
@@ -106,13 +103,12 @@ const projects = [
     title: "無人化健身房資料庫管理系統",
     category: "學習經歷",
     tech: ["Oracle", "ERD", "Database Design"],
-    summary: "整合會員、課程、器材與收支管理的關聯式資料庫系統。",
+    summary: "整合會員、課程、器材與收支管理的關聯式資料庫管理系統。",
     details:
       "使用 Oracle 資料庫建立整合會員、課程、器材管理到財務收支的關聯式資料庫系統，模擬健身房營運情境並進行 CRUD 操作。",
     highlights: [
       "建立 ERD 與關聯式資料庫設計",
       "整合會員、課程、器材與財務收支資料",
-      "之後可補 ERD 與操作 demo",
     ],
     poster: "",
     gallery: [],

@@ -1,23 +1,33 @@
-function Hero() {
+const Hero = () => {
   return (
     <section className="hero">
-      <p className="hero-subtitle">Portfolio Website</p>
-      <h1>你的名字</h1>
-      <p className="hero-description">
-        輔仁大學醫學資訊暨創新應用學程學生，關注前端開發、系統分析、
-        資料庫設計與作品展示，並持續累積跨領域實作與活動統籌經驗。
-      </p>
 
-      <div className="hero-buttons">
-        <a href="#projects" className="hero-btn primary-btn">
-          查看作品
-        </a>
-        <a href="#contact" className="hero-btn secondary-btn">
-          聯絡方式
-        </a>
+      <div className="hero-container">
+
+        <img
+          src="/assets/profile/avatar.jpg"
+          alt="profile"
+          className="hero-avatar"
+        />
+
+        <h1 className="hero-name">
+          李佳芸
+        </h1>
+
+        <h2 className="hero-english">
+          CHIA-YUN-LI
+        </h2>
+
+
+        <p className="hero-description">
+          資訊與醫療跨領域背景，專注於 Web 系統開發與資料庫設計，
+          目前持續學習 React、NestJS 與系統架構設計。
+        </p>
+
       </div>
+
     </section>
   );
-}
+};
 
 export default Hero;
